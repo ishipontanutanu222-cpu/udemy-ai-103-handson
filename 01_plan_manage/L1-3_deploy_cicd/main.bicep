@@ -103,6 +103,9 @@ resource deployment 'Microsoft.CognitiveServices/accounts/deployments@2026-05-01
     name: skuName
     capacity: capacity
   }
+  dependsOn: [
+    project
+  ]
   properties: {
     model: {
       format: modelFormat
